@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: Southland, sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.links {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  gap: 30px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #9f8863;
+}

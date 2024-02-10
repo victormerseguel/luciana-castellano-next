@@ -1,0 +1,36 @@
+.therapies {
+  background-image: url("../../public/assets/therapies-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  padding: 90px 20px 100px;
+}
+
+.therapies_content {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.therapies_left {
+  max-width: 600px;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  padding-right: 20px;
+}
+
+.therapies_left p {
+  margin-bottom: 1.2rem;
+}
+
+.therapies_right {
+  max-width: 300px;
+}
+
+.therapies_right img {
+  width: 100%;
+  box-shadow: 4px 4px 12px 0px rgba(79, 64, 42, 0.35);
+}
