@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Notes
 
-## Getting Started
+- [] criar observer para cada depoimento
+- [] criar dinamicamente os marcadores das bolinhas
+- [] criar logica para que as bolinhas fiquem preenchidas quando a imagem está visivel
+- [] criar movimento automático do carrossel
+- [] criar função dos botões
+- [] mudar cursor css para zoom in
+- [] ampliar imagem quando clicada e pausar carrossel
+- [] diminuir velocidade do carrossel (ou parar ?) quando o mouse entra nele
 
-First, run the development server:
+- [x] criar seção atendimentos
+- [x] criar seção contatos
+- [x] criar seção footer
+- [x] colocar footer no layout e não na app
+- [] criar termos de uso
+- [] criar políticas de privacidade
+- [] definir posts para fixar no footer
+- [] links nos ícones do footer
+- [] criar link formulario de contato com emailjs
+- [] link atendimentos para a pagina de atendimentos
+- [] inserir observer em cada elemento para menu
+- [] menu active de acordo com elemento visivel
+- [] trocar palavras do Header "seu corpo", "sua alma" etc
+- [] validação formulario
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [] menu mobile
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [] utilizar componente Image do next

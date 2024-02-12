@@ -18,6 +18,10 @@
   gap: 30px;
 }
 
+.nav li {
+  list-style: none;
+}
+
 .a {
   text-decoration: none;
 }

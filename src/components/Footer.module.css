@@ -1,0 +1,58 @@
+.footer {
+  position: relative;
+  padding: 90px 20px 30px;
+}
+
+.footer_bg {
+  z-index: -1;
+}
+
+.footer_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram_posts {
+  margin: 30px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.social_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.social_links a:hover {
+  opacity: 0.5;
+}
+
+.footer_content p {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer_content p a {
+  text-decoration: none;
+}
+
+.footer_content p a:visited {
+  color: #4f402a;
+}
+
+.mobile1,
+.mobile2,
+.mobile3 {
+  display: none;
+}

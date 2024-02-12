@@ -3,4 +3,28 @@
   background-position: bottom left;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 90px 20px 100px;
+}
+
+.trauma_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trauma_left {
+  max-width: 300px;
+}
+
+.trauma_left img {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 4px 4px 12px 0px rgba(79, 64, 42, 0.35);
+}
+
+.trauma_right {
+  max-width: 620px;
+  margin-left: 50px;
 }

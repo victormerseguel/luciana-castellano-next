@@ -11,3 +11,19 @@
   box-sizing: border-box;
   color: #4f402a;
 }
+
+.text,
+.subtitle {
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 0.7rem;
+}
+
+.subtitle {
+  text-transform: uppercase;
+}
+
+.text + .subtitle {
+  margin-top: 2rem;
+}

@@ -1,0 +1,38 @@
+.about {
+  background-image: url("../../public/assets/about-bg.jpg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 20px 100px;
+}
+
+.about_content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_left {
+  margin-right: 50px;
+  max-width: 600px;
+}
+
+.about_right {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.about_right img {
+  width: 100%;
+  box-shadow: 4px 4px 12px 0px rgba(79, 64, 42, 0.35);
+}
+
+.about_right p {
+  font-family: Lora, serif;
+  font-size: 20px;
+  text-align: center;
+}
