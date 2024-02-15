@@ -3,11 +3,11 @@
 import Image from "next/image";
 import styles from "./Testimonials.module.css";
 import Title from "./Title";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Testimonials = () => {
   const imgContainerRef = useRef();
-  let gap;
+  const testimonialsRef = useRef([]);
   const testimonials_img = [
     "/assets/depoimento_atendimento_01.jpg",
     "/assets/depoimento_atendimento_02.jpg",
@@ -20,6 +20,44 @@ const Testimonials = () => {
     "/assets/depoimento_criancas_02.jpg",
   ];
 
+  const [activeBall, setActiveBall] = useState([]);
+  const activeControl = [];
+
+  useEffect(() => {
+    testimonials_img.forEach((item) => {
+      activeControl.push({ active: false });
+    });
+    setActiveBall(activeControl);
+  }, []);
+
+  if (typeof window !== "undefined") {
+    const balls = document.querySelectorAll(".ball");
+    const testimonials = document.querySelectorAll(".images_caroussel");
+    const lenght = testimonials_img.length;
+
+    let count = 1;
+    const position = 290;
+
+    setInterval(() => {
+      testimonials.forEach((img, idx) => {
+        img.style.transform = `translateX(${-position * count}px)`;
+
+        testimonials_img.forEach((item, i) => {
+          activeControl[i] = { active: false };
+        });
+        if (count > idx + 1) {
+          img.style.transform = `translateX(${
+            -position * count + testimonials_img.length * 290
+          }px)`;
+        }
+      });
+      activeControl[count - 1].active = true;
+      setActiveBall(activeControl);
+
+      count > testimonials_img.length - 1 ? (count = 1) : (count = count + 1);
+    }, 1500);
+  }
+
   return (
     <section className={styles.testimonials}>
       <Title text="Depoimentos" />
@@ -31,13 +69,12 @@ const Testimonials = () => {
             className={styles.testimonials_previous}
           />
         </button>
-        <div
-          className={styles.testimonials_images}
-          ref={imgContainerRef}
-          style={{ gap: { gap } + "px" }}
-        >
+        <div className={styles.testimonials_images} ref={imgContainerRef}>
           {testimonials_img.map((img, i) => (
-            <div className={styles.testimonials_img} key={i}>
+            <div
+              className={`images_caroussel ${styles.testimonials_img}`}
+              key={i}
+            >
               <img src={img} alt="Depoimento" />
             </div>
           ))}
@@ -51,7 +88,14 @@ const Testimonials = () => {
         </button>
       </div>
       <div className={styles.testimonials_display}>
-        <div className={styles.testimonials_ball}></div>
+        {testimonials_img.map((item, i) => (
+          <div
+            className={`ball ${styles.testimonials_ball}`}
+            key={i}
+            style={{ transform: "TranslateX('0')" }}
+            id={"ball" + i}
+          ></div>
+        ))}
       </div>
     </section>
   );

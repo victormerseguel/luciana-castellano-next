@@ -27,3 +27,7 @@
 .text + .subtitle {
   margin-top: 2rem;
 }
+
+.bg {
+  z-index: -1;
+}

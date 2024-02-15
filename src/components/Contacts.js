@@ -3,14 +3,40 @@ import Image from "next/image";
 import styles from "./Contacts.module.css";
 import Title from "./Title";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const templateParams = {
+      from_name: name,
+      email,
+      message,
+    };
+
+    try {
+      if (name === "" || email === "" || message === "")
+        return console.log("preencher campos");
+
+      const response = await emailjs.send(
+        "service_3941nzi",
+        "template_cjyhfaa",
+        templateParams,
+        "Z_xumeCK9WYhzdKVw"
+      );
+      console.log("Email enviado", response.status, response.text);
+
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.log("Errror: ", error);
+    }
   };
 
   return (
