@@ -25,7 +25,7 @@ const Testimonials = () => {
 
   useEffect(() => {
     testimonials_img.forEach((item) => {
-      activeControl.push({ active: false });
+      activeControl.push(false);
     });
     setActiveBall(activeControl);
   }, []);
@@ -42,17 +42,15 @@ const Testimonials = () => {
       testimonials.forEach((img, idx) => {
         img.style.transform = `translateX(${-position * count}px)`;
 
-        testimonials_img.forEach((item, i) => {
-          activeControl[i] = { active: false };
-        });
-        if (count > idx + 1) {
+        if (
+          +img.style.transform.replace("translateX(", "").replace("px)", "") <
+          -position * (idx + 2)
+        ) {
           img.style.transform = `translateX(${
             -position * count + testimonials_img.length * 290
           }px)`;
         }
       });
-      activeControl[count - 1].active = true;
-      setActiveBall(activeControl);
 
       count > testimonials_img.length - 1 ? (count = 1) : (count = count + 1);
     }, 1500);
