@@ -3,11 +3,19 @@
 import Image from "next/image";
 import styles from "./Testimonials.module.css";
 import Title from "./Title";
-import { useEffect, useRef, useState } from "react";
-import Carousel, { testimonials_img } from "./Carousel";
+import { useContext, useEffect, useRef, useState } from "react";
+import Carousel from "./Carousel";
+import { testimonials_img } from "@/databases/testimonials_db";
+import { Context } from "@/hooks/Context";
 
 const Testimonials = () => {
   const imgContainerRef = useRef();
+  const { countCarousel, setCountCarousel } = useContext(Context);
+  Carousel();
+
+  const handleNext = () => {
+    setCountCarousel((prevCount) => prevCount + 1);
+  };
 
   return (
     <section className={styles.testimonials}>
@@ -35,6 +43,7 @@ const Testimonials = () => {
             src="/assets/arrow-button.svg"
             alt="Próxima imagem"
             className={styles.testimonials_next}
+            onClick={handleNext}
           />
         </button>
       </div>

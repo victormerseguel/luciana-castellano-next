@@ -13,6 +13,7 @@ export default function Header() {
         style={{ objectPosition: "center" }}
         className="bg"
         quality={85}
+        priority
       />
       <div className={styles.header_wrap}>
         <Navbar />

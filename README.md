@@ -9,6 +9,7 @@
 - [] ampliar imagem quando clicada e pausar carrossel
 - [] diminuir velocidade do carrossel (ou parar ?) quando o mouse entra nele
 - [] criar função mobile do carrossel com scroll lateral no dedo
+- [] botões clicáveis bolinhas
 
 - [x] criar seção atendimentos
 - [x] criar seção contatos
