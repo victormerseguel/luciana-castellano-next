@@ -20,12 +20,18 @@ export default function Header() {
   const homeRef = useRef(null);
   const [countSentence, setCountSentence] = useState(0);
 
+  const changeSentence = () => {
+    console.log(countSentence);
+    countSentence === sentences.length - 1
+      ? setCountSentence(0)
+      : setCountSentence(countSentence + 1);
+  };
+
   useEffect(() => {
-    setInterval(() => {
-      countSentence === sentences.length - 1
-        ? setCountSentence(0)
-        : setCountSentence(countSentence + 1);
+    const interval = setInterval(() => {
+      changeSentence();
     }, 2500);
+    return () => clearInterval(interval);
   }, [countSentence]);
 
   return (
