@@ -18,4 +18,6 @@ const Observer = forwardRef(({ state, setState }, ref) => {
   }, [state]);
 });
 
+Observer.displayName = "Observer";
+
 export default Observer;
