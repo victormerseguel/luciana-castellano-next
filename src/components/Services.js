@@ -1,10 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Services.module.css";
 import Title from "./Title";
+import { useContext, useRef } from "react";
+import { Context } from "@/hooks/Context";
+import Observer from "@/hooks/Observer";
 
 const Services = () => {
+  const { servicesVisible, setServicesVisible } = useContext(Context);
+  const servicesRef = useRef(null);
+
   return (
-    <div className={styles.services}>
+    <div className={styles.services} ref={servicesRef} id="services">
+      <Observer
+        state={servicesVisible}
+        setState={setServicesVisible}
+        ref={servicesRef}
+      />
       <Image
         src="/assets/clean-bg.jpg"
         alt="background"

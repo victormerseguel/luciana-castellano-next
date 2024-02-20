@@ -11,7 +11,7 @@ const Observer = forwardRef(({ state, setState }, ref) => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
-      setState(+`${Math.floor(entry.intersectionRatio * 100)}`);
+      setState(+Math.floor(entry.intersectionRatio * 100));
     }, options);
 
     observer.observe(ref.current);

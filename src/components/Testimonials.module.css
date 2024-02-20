@@ -32,7 +32,7 @@
   max-width: 1000px;
   height: 210px;
   align-items: center;
-  overflow: hidden;
+  overflow-x: auto;
   margin: 0 20px;
 }
 

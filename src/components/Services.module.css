@@ -2,6 +2,7 @@
   width: 100vw;
   padding: 90px 20px;
   position: relative;
+  box-shadow: inset 0px 4px 12px 0px #4f402a19;
 }
 
 .services_bg {

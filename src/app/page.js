@@ -19,7 +19,7 @@ export default function Page() {
           <Therapies />
           <Trauma />
           <About />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Services />
           <Contacts />
         </main>

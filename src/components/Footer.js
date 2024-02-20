@@ -58,16 +58,19 @@ const Footer = () => {
           ))}
         </div>
         <div className={styles.social_links}>
-          <a href="#">
+          <a href="https://www.instagram.com/luhcastellano/" target="_blank">
             <img src="/assets/icon-instagram.svg" alt="Instagram" />
           </a>
-          <a href="#">
+          <a href="https://www.youtube.com/c/LuhCastellano" target="_blank">
             <img src="/assets/icon-youtube.svg" alt="Youtube" />
           </a>
-          <a href="#">
+          <a
+            href="https://api.whatsapp.com/send/?phone=351935715800&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+%C3%A0+respeito+dos+atendimentos.&type=phone_number&app_absent=0"
+            target="_blank"
+          >
             <img src="/assets/icon-whatsapp.svg" alt="WhatsApp" />
           </a>
-          <a href="#">
+          <a href="#contacts">
             <img src="/assets/icon-mail.svg" alt="E-mail" />
           </a>
         </div>

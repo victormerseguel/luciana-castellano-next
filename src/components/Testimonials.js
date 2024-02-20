@@ -4,17 +4,22 @@ import Image from "next/image";
 import styles from "./Testimonials.module.css";
 import Title from "./Title";
 import { useContext, useEffect, useRef, useState } from "react";
-import Carousel from "./Carousel";
+import Carousel, { changeSlide } from "./Carousel";
 import { testimonials_img } from "@/databases/testimonials_db";
 import { Context } from "@/hooks/Context";
 
 const Testimonials = () => {
   const imgContainerRef = useRef();
-  const { countCarousel, setCountCarousel } = useContext(Context);
+  const { count, setCount } = useContext(Context);
   Carousel();
 
   const handleNext = () => {
-    setCountCarousel((prevCount) => prevCount + 1);
+    count === testimonials_img.length - 1 ? setCount(0) : setCount(count + 1);
+    changeSlide(count, "right", 0.8);
+  };
+  const handlePrevious = () => {
+    count === 0 ? setCount(testimonials_img.length - 1) : setCount(count - 1);
+    changeSlide(count, "left", 0.8);
   };
 
   return (
@@ -26,6 +31,7 @@ const Testimonials = () => {
             src="/assets/arrow-button.svg"
             alt="Imagem anteriror"
             className={styles.testimonials_previous}
+            onClick={handlePrevious}
           />
         </button>
         <div className={styles.testimonials_images} ref={imgContainerRef}>

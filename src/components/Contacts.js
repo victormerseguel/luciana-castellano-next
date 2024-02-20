@@ -40,7 +40,7 @@ const Contacts = () => {
   };
 
   return (
-    <section className={styles.contacts}>
+    <section className={styles.contacts} id="contacts">
       <Image
         src="/assets/trauma-bg.jpg"
         alt="Background"

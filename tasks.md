@@ -18,13 +18,13 @@
 - [] criar termos de uso
 - [] criar políticas de privacidade
 - [] definir posts para fixar no footer
-- [] links nos ícones do footer
+- [x] links nos ícones do footer
 - [x] criar link formulario de contato com emailjs
 - [] link atendimentos para a pagina de atendimentos
-- [] inserir observer em cada elemento para menu
-- [] criar um useContext para os observers
-- [] menu active de acordo com elemento visivel
-- [] trocar palavras do Header "seu corpo", "sua alma" etc
+- [x] inserir observer em cada elemento para menu
+- [x] criar um useContext para os observers
+- [x] menu active de acordo com elemento visivel
+- [x] trocar palavras do Header "seu corpo", "sua alma" etc
 - [] validação formulario
 
 - [] menu mobile

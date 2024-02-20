@@ -1,11 +1,36 @@
+"use client";
 import Image from "next/image";
 import styles from "./Header.module.css";
 
 import Navbar from "./Navbar";
+import { useContext, useEffect, useRef, useState } from "react";
+import { Context } from "@/hooks/Context";
+import Observer from "@/hooks/Observer";
+
+const sentences = [
+  "a sua / alma",
+  "o seu / corpo",
+  "a sua / mente",
+  "a sua / essência",
+  "o seu / poder",
+];
 
 export default function Header() {
+  const { homeVisible, setHomeVisible } = useContext(Context);
+  const homeRef = useRef(null);
+  const [countSentence, setCountSentence] = useState(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      countSentence === sentences.length - 1
+        ? setCountSentence(0)
+        : setCountSentence(countSentence + 1);
+    }, 2500);
+  }, [countSentence]);
+
   return (
-    <header className={styles.header}>
+    <header className={styles.header} ref={homeRef} id="home">
+      <Observer state={homeVisible} setState={setHomeVisible} ref={homeRef} />
       <Image
         src="/assets/header-bg.jpg"
         alt="Luciana Castellano"
@@ -15,8 +40,8 @@ export default function Header() {
         quality={85}
         priority
       />
+      <Navbar />
       <div className={styles.header_wrap}>
-        <Navbar />
         <div className={styles.header_content}>
           <div className={styles.header_left}>
             <h1>
@@ -26,9 +51,12 @@ export default function Header() {
             </h1>
             <p>Reconecte-se</p>
             <p>
-              Com <span id="change_1">a sua</span>
+              Com{" "}
+              <span id="change_1">
+                {sentences[countSentence].split(" / ")[0]}
+              </span>
             </p>
-            <p id="change_2">Essência.</p>
+            <p id="change_2">{sentences[countSentence].split(" / ")[1]}.</p>
           </div>
           <div className={styles.header_center}>
             <Image

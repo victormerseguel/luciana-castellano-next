@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #4f402a;
+  scroll-behavior: smooth;
 }
 
 .text,
@@ -26,4 +27,12 @@
 
 .bg {
   z-index: -1;
+}
+
+#therapies,
+#trauma,
+#about,
+#services,
+#contacts {
+  scroll-margin-top: 60px;
 }

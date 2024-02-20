@@ -10,8 +10,8 @@ import InsertTexts from "./InsertTexts";
 import { Context } from "@/hooks/Context";
 
 const About = () => {
-  const aboutRef = useRef();
   const { aboutVisible, setAboutVisible } = useContext(Context);
+  const aboutRef = useRef(null);
 
   return (
     <section className={styles.about} ref={aboutRef} id="about">
@@ -20,7 +20,6 @@ const About = () => {
         setState={setAboutVisible}
         ref={aboutRef}
       />
-      ;
       <div className={styles.about_content}>
         <div className={styles.about_left}>
           <Title text="Sobre Mim" />
