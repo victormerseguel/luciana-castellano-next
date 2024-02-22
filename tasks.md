@@ -27,6 +27,6 @@
 - [x] trocar palavras do Header "seu corpo", "sua alma" etc
 - [] validação formulario
 
-- [] menu mobile
+- [x] menu mobile
 
 - [] utilizar componente Image do next

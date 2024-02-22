@@ -3,6 +3,7 @@
   padding: 90px 20px;
   position: relative;
   box-shadow: inset 0px 4px 12px 0px #4f402a19;
+  height: fit-content;
 }
 
 .services_bg {
@@ -25,6 +26,8 @@
 
 .services_right {
   max-width: 720px;
+  display: flex;
+  flex-direction: column;
 }
 
 .services_link {
@@ -46,4 +49,11 @@
 .services_right a img {
   width: 6px;
   margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  .services_content {
+    flex-direction: column;
+    margin: 0 20px;
+  }
 }

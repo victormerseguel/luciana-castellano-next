@@ -56,3 +56,9 @@
 .mobile3 {
   display: none;
 }
+
+@media (max-width: 1063px) {
+  .instagram_posts {
+    max-width: 610px;
+  }
+}

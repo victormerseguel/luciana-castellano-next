@@ -11,5 +11,11 @@
 }
 
 .container img {
-  width: 130px;
+  max-width: 130px;
+}
+
+@media (max-width: 375px) {
+  .container img {
+    width: 100px;
+  }
 }

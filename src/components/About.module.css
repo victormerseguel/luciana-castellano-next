@@ -36,3 +36,34 @@
   font-size: 20px;
   text-align: center;
 }
+
+@media (max-width: 850px) {
+  .about_left {
+    flex-shrink: 2;
+  }
+  .about_right {
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 660px) {
+  .about_content {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+
+  .about_right img {
+    width: 200px;
+  }
+
+  .about_right p {
+    display: none;
+  }
+
+  .about_left {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

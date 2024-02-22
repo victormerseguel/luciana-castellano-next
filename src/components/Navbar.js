@@ -1,11 +1,13 @@
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import NavItem from "./NavItem";
+import { Context } from "@/hooks/Context";
 
 export default function Navbar() {
   const [navScroll, setNavScroll] = useState(false);
+  const { setMobile } = useContext(Context);
 
   const scrollNav = () => {
     window.scrollY > 25 ? setNavScroll(true) : setNavScroll(false);
@@ -33,7 +35,7 @@ export default function Navbar() {
           <NavItem text="Sobre Mim" index={3} desktop />
           <NavItem text="Atendimentos" index={4} desktop />
           <NavItem text="Contatos" index={5} desktop />
-          <li className={styles.menu_mobile}>
+          <li className={styles.menu_mobile} onClick={() => setMobile(true)}>
             <img src="/assets/menumobile.svg" alt="Menu" />
           </li>
         </ul>

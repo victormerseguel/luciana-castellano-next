@@ -28,3 +28,33 @@
   max-width: 620px;
   margin-left: 50px;
 }
+
+@media (max-width: 850px) {
+  .trauma_right {
+    flex-shrink: 2;
+  }
+  .trauma_left {
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 660px) {
+  .trauma_content {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .trauma_content p {
+    text-align: left !important;
+  }
+
+  .trauma_left img {
+    width: 200px;
+  }
+
+  .trauma_right {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

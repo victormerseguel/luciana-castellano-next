@@ -73,3 +73,7 @@
   color: #4f402a;
   background-color: transparent;
 }
+
+.incomplete {
+  color: red;
+}

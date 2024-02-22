@@ -9,19 +9,18 @@ import Observer from "@/hooks/Observer";
 
 const sentences = [
   "a sua / alma",
-  "o seu / corpo",
   "a sua / mente",
   "a sua / essência",
+  "o seu / corpo",
   "o seu / poder",
 ];
 
 export default function Header() {
   const { homeVisible, setHomeVisible } = useContext(Context);
-  const homeRef = useRef(null);
   const [countSentence, setCountSentence] = useState(0);
+  const homeRef = useRef(null);
 
   const changeSentence = () => {
-    console.log(countSentence);
     countSentence === sentences.length - 1
       ? setCountSentence(0)
       : setCountSentence(countSentence + 1);
@@ -30,7 +29,7 @@ export default function Header() {
   useEffect(() => {
     const interval = setInterval(() => {
       changeSentence();
-    }, 2500);
+    }, 3000);
     return () => clearInterval(interval);
   }, [countSentence]);
 
@@ -68,8 +67,10 @@ export default function Header() {
             <Image
               src="/assets/photo-luciana1.jpg"
               alt="Luciana Castellano"
-              fill
+              width={290}
+              height={424}
               quality={90}
+              // sizes="(min-width: 869px) 30vw"
             />
           </div>
           <div className={styles.header_right}>
