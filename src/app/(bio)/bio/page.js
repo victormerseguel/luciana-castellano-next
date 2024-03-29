@@ -47,7 +47,7 @@ function BioInstagram() {
         <img src={profile} alt="Luciana Castellano" className={styles.cover} />
         <div className={styles.links_container}>
           {cards.map(({ src, alt, link }) => (
-            <div className={styles.link}>
+            <div className={styles.link} key={src}>
               <Link
                 href={link}
                 key={src}

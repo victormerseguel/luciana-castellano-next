@@ -28,9 +28,7 @@ const CaminhosPotentes = () => {
   const testimonyRef = useRef();
 
   useEffect(() => {
-    setTimeout(() => {
-      setLazy(true);
-    }, 1500);
+    setLazy(true);
   }, []);
 
   return (
