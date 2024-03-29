@@ -25,7 +25,7 @@
 - [x] criar um useContext para os observers
 - [x] menu active de acordo com elemento visivel
 - [x] trocar palavras do Header "seu corpo", "sua alma" etc
-- [] validação formulario
+- [x] validação formulario
 
 - [x] menu mobile
 

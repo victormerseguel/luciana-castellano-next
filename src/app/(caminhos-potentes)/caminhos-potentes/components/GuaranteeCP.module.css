@@ -1,0 +1,205 @@
+@import url("../globals_cp.css");
+
+.guaranteeContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  /* background: url("/assets/caminhospotentes/cp_background8.jpg") no-repeat */
+  /* center; */
+  /* background-size: cover; */
+}
+
+.guaranteeBg {
+  margin: auto;
+}
+
+.guaranteePaper {
+  height: 800px;
+}
+
+.gridWrap {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+/* GRID LEFT */
+.guarateeGrid {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 50px;
+}
+
+.guaranteeGridLeft {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 370px;
+  border: 1px solid var(--darkGreen);
+  border-radius: 10px;
+  margin: 50px 0;
+  background-color: #fffcf6;
+}
+
+.guaranteeGridLeft h2 {
+  font: 300 15pt Argent CF, serif;
+  letter-spacing: 0.4px;
+  padding: 20px 20px 40px 20px;
+}
+
+.pContainer {
+  font-family: Arimo, sans-serif;
+  display: grid;
+  grid-template-columns: minmax(auto, auto) minmax(0, 2fr) minmax(auto, auto);
+  padding: 0 20px 20px 20px;
+  align-items: end;
+  font-size: 11pt;
+}
+
+.dots {
+  overflow: hidden;
+}
+
+.pLeft {
+  padding-right: 10px;
+  text-align: start;
+}
+
+.pRight {
+  padding-left: 10px;
+  text-align: end;
+}
+
+.pRight span {
+  text-decoration: line-through;
+}
+
+#oldPrice {
+  text-decoration: line-through;
+  margin-bottom: -10px;
+  padding-top: 20px;
+}
+
+#textNormal {
+  font-size: 18pt;
+}
+
+#actualPrice {
+  font-size: 28pt;
+  margin-top: -10px;
+}
+
+#totalPrice {
+  font-size: 11pt;
+  margin-top: -8px;
+}
+
+.guaranteeGridLeft a p {
+  background-color: #ffb800;
+  display: inline-block;
+  padding: 15px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.guaranteeGridLeft a p:hover {
+  background-color: var(--darkGreen);
+  color: var(--lightBege);
+  padding: 15px 30px;
+}
+
+.paymentMethod {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 65%;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.paymentMethod img {
+  border-radius: 0;
+}
+
+.postit {
+  max-width: 300px;
+  rotate: 15deg;
+  margin: 0 auto -20px auto;
+}
+
+/* GRID RIGHT */
+.guaranteeGridRight img {
+  width: 183px;
+  margin: 0 auto 30px 40px;
+}
+
+.guaranteeGridRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 370px;
+}
+
+.guaranteeGridRight h2 {
+  font: 300 15pt Argent CF, serif;
+  letter-spacing: 0.4px;
+  padding: 20px 0;
+}
+
+.guaranteeGridRight h3 {
+  font: 300 13pt Arimo, sans-serif;
+  padding-bottom: 15px;
+}
+
+.guaranteeGridRight p {
+  font: 300 11pt Arimo, sans-serif;
+  line-height: 25px;
+}
+
+.closed {
+  width: fit-content;
+  margin: 10px auto 30px;
+  background-color: #c7c7c7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arimo, sans-serif;
+}
+
+@media (max-width: 700px) {
+  .guarateeGrid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .guaranteePaper {
+    display: none;
+  }
+
+  .guaranteeBg,
+  .gridWrap {
+    position: static;
+  }
+
+  .guaranteeGridRight img {
+    margin: -60px auto 0 auto;
+    width: 140px;
+  }
+
+  .guaranteeGridRight {
+    padding-bottom: 150px;
+  }
+
+  .guaranteeGridLeft,
+  .guaranteeGridLeft {
+    max-width: 370px;
+    padding: 0 15px;
+  }
+}

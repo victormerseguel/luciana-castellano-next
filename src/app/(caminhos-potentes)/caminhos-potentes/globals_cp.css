@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-Regular.eot");
+  src: local("/font/argent-font/ArgentCF-Regular"),
+    url("/font/argent-font/ArgentCF-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-Bold.eot");
+  src: local("Argent CF Bold"), local("/font/argent-font/ArgentCF-Bold"),
+    url("/font/argent-font/ArgentCF-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-Bold.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-Bold.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-RegularItalic.eot");
+  src: local("Argent CF Regular Italic"),
+    local("/font/argent-font/ArgentCF-RegularItalic"),
+    url("/font/argent-font/ArgentCF-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-RegularItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-RegularItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-Thin.eot");
+  src: local("Argent CF Thin"), local("/font/argent-font/ArgentCF-Thin"),
+    url("/font/argent-font/ArgentCF-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-Thin.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-Thin.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-Light.eot");
+  src: local("Argent CF Light"), local("/font/argent-font/ArgentCF-Light"),
+    url("/font/argent-font/ArgentCF-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-Light.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-Light.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-DemiBold.eot");
+  src: local("Argent CF DemiBold"), local("/font/argent-font/ArgentCF-DemiBold"),
+    url("/font/argent-font/ArgentCF-DemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-DemiBold.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-DemiBold.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-ExtraBold.eot");
+  src: local("Argent CF ExtraBold"),
+    local("/font/argent-font/ArgentCF-ExtraBold"),
+    url("/font/argent-font/ArgentCF-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-ExtraBold.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-ExtraBold.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF Super";
+  src: url("/font/argent-font/ArgentCF-Super.eot");
+  src: local("Argent CF Super"), local("ArgentCF-Super"),
+    url("/font/argent-font/ArgentCF-Super.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-Super.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-Super.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-Super.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-BoldItalic.eot");
+  src: local("Argent CF Bold Italic"),
+    local("/font/argent-font/ArgentCF-BoldItalic"),
+    url("/font/argent-font/ArgentCF-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-BoldItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-BoldItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-ThinItalic.eot");
+  src: local("Argent CF Thin Italic"),
+    local("/font/argent-font/ArgentCF-ThinItalic"),
+    url("/font/argent-font/ArgentCF-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-ThinItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-ThinItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-LightItalic.eot");
+  src: local("Argent CF Light Italic"),
+    local("/font/argent-font/ArgentCF-LightItalic"),
+    url("/font/argent-font/ArgentCF-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-LightItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-LightItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-DemiBoldItalic.eot");
+  src: local("Argent CF DemiBold Italic"),
+    local("/font/argent-font/ArgentCF-DemiBoldItalic"),
+    url("/font/argent-font/ArgentCF-DemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-DemiBoldItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-DemiBoldItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-DemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Argent CF";
+  src: url("/font/argent-font/ArgentCF-ExtraBoldItalic.eot");
+  src: local("Argent CF ExtraBold Italic"),
+    local("/font/argent-font/ArgentCF-ExtraBoldItalic"),
+    url("/font/argent-font/ArgentCF-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/argent-font/ArgentCF-ExtraBoldItalic.woff2") format("woff2"),
+    url("/font/argent-font/ArgentCF-ExtraBoldItalic.woff") format("woff"),
+    url("/font/argent-font/ArgentCF-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}

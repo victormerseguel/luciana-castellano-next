@@ -1,0 +1,28 @@
+@import url("../globals_cp.css");
+
+.testimonyContainer {
+  background-image: url("/assets/caminhospotentes/cp_background7.jpg");
+  width: 100%;
+}
+
+.testimonyContent {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonyContent img {
+  max-width: 400px;
+  align-self: center;
+  border-radius: 25px;
+}
+
+@media (max-width: 600px) {
+  .testimonyContent img {
+    width: 90%;
+  }
+}
