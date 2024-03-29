@@ -39,8 +39,6 @@ const cards = [
 ];
 
 function BioInstagram() {
-  console.log(encodeURIComponent("olá"));
-
   return (
     <div className={styles.bioBackground}>
       <div className={styles.bioContainer}>
