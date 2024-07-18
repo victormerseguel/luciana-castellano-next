@@ -21,7 +21,8 @@ const Services = () => {
       <Image
         src="/assets/clean-bg.jpg"
         alt="background"
-        fill={true}
+        fill
+        sizes="100vw"
         className={styles.services_bg}
       />
       <div className={styles.services_content}>

@@ -7,6 +7,7 @@ import styles from "./Trauma.module.css";
 import { useContext, useRef } from "react";
 import { Context } from "@/app/(_page)/hooks/Context";
 import Observer from "@/app/(_page)/hooks/Observer";
+import Image from "next/image";
 
 const Trauma = () => {
   const { traumaVisible, setTraumaVisible } = useContext(Context);
@@ -14,6 +15,14 @@ const Trauma = () => {
 
   return (
     <section className={styles.trauma} ref={traumaRef} id="trauma">
+      <Image
+        src={"/assets/trauma-bg.jpg"}
+        alt="background"
+        className="bg"
+        fill
+        sizes="100vw"
+        style={{ objectFit: "cover", objectPosition: "left" }}
+      />
       <Observer
         state={traumaVisible}
         setState={setTraumaVisible}
@@ -21,10 +30,14 @@ const Trauma = () => {
       />
       <div className={styles.trauma_content}>
         <div className={styles.trauma_left}>
-          <img
-            src="/assets/trauma-image.jpg"
-            alt="Trauma Informed - Luciana Castellano"
-          />
+          <div>
+            <Image
+              src="/assets/trauma-image.jpg"
+              alt="Flor de Lótus"
+              fill
+              sizes="300px"
+            />
+          </div>
         </div>
         <div className={styles.trauma_right}>
           <Title text="Trauma Informed" />

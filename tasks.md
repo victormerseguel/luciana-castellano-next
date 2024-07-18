@@ -29,4 +29,5 @@
 
 - [x] menu mobile
 
-- [] utilizar componente Image do next
+- [x] utilizar componente Image do next
+- [x] adicionar link para caminhos potentes no sobre mim

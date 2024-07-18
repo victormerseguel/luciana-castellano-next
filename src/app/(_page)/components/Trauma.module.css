@@ -1,13 +1,11 @@
 .trauma {
-  background-image: url("../../../../public/assets/trauma-bg.jpg");
-  background-position: bottom left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 90px 20px 100px;
+  position: relative;
+  padding: 90px 35px 100px;
 }
 
 .trauma_content {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   max-width: 1000px;
@@ -15,27 +13,25 @@
 }
 
 .trauma_left {
+  width: 100%;
   max-width: 300px;
+  min-width: 200px;
+}
+
+.trauma_left div {
+  position: relative;
+  width: 100%;
+  padding-top: 139.6%;
 }
 
 .trauma_left img {
-  width: 100%;
   border-radius: 2px;
   box-shadow: 4px 4px 12px 0px rgba(79, 64, 42, 0.35);
 }
 
 .trauma_right {
   max-width: 620px;
-  margin-left: 50px;
-}
-
-@media (max-width: 850px) {
-  .trauma_right {
-    flex-shrink: 2;
-  }
-  .trauma_left {
-    flex-shrink: 1;
-  }
+  margin-right: 50px;
 }
 
 @media (max-width: 660px) {

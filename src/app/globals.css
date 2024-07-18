@@ -10,6 +10,13 @@
   --lightGreen: #a5c6ab;
   --darkPink: #9d1753;
   --lightPink: #c18da2;
+
+  /* Pequenos Inventores */
+  --peqinvBege: #fff8e6;
+  --peqinvLight: #5a2300;
+  --peqinvDark: #301300;
+  --peqinvGreen: #1d9299;
+  --peqinvBg: #fffcf6;
 }
 
 html,

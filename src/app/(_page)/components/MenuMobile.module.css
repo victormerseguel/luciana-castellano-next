@@ -19,7 +19,7 @@
 .mobile_logo {
   position: relative;
   width: 320px;
-  height: 70px;
+  padding-top: 21.875%;
 }
 
 .mobile_ul {
@@ -34,11 +34,4 @@
 
 .mobile_ul li {
   list-style: none;
-}
-
-@media (max-width: 374px) {
-  .mobile_logo {
-    width: 320px;
-    height: 50px;
-  }
 }

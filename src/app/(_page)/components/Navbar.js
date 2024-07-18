@@ -4,11 +4,10 @@ import styles from "./Navbar.module.css";
 import { useContext, useState } from "react";
 import NavItem from "./NavItem";
 import { Context } from "@/app/(_page)/hooks/Context";
-import { therapies_title } from "@/app/(_page)/databases/therapies_db";
 
 export default function Navbar() {
   const [navScroll, setNavScroll] = useState(false);
-  const { setMobile } = useContext(Context);
+  const { setMobile, items_menu } = useContext(Context);
 
   const scrollNav = () => {
     window.scrollY > 25 ? setNavScroll(true) : setNavScroll(false);
@@ -31,11 +30,9 @@ export default function Navbar() {
           </a>
         </div>
         <ul className={styles.links}>
-          <NavItem text="Sobre Mim" index={3} desktop />
-          {/* <NavItem text={therapies_title} index={1} desktop /> */}
-          <NavItem text="Trauma Informed" index={2} desktop />
-          <NavItem text="Atendimentos" index={4} desktop />
-          <NavItem text="Contatos" index={5} desktop />
+          {items_menu.map((item, idx) => (
+            <NavItem index={idx} desktop key={idx} />
+          ))}
           <li className={styles.menu_mobile} onClick={() => setMobile(true)}>
             <img src="/assets/menumobile.svg" alt="Menu" />
           </li>

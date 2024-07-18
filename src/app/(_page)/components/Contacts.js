@@ -54,6 +54,7 @@ const Contacts = () => {
         src="/assets/trauma-bg.jpg"
         alt="Background"
         fill
+        sizes="100vw"
         className={styles.contacts_bg}
       />
       <div className={styles.contacts_content}>

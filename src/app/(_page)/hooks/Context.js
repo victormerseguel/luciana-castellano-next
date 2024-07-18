@@ -16,26 +16,34 @@ export const ContextProvider = ({ children }) => {
   const [animateMobileMenu, setAnimateMobileMenu] = useState(true);
 
   const items_menu = [
-    "home",
-    "therapies",
-    "trauma",
-    "about",
-    "services",
-    "contacts",
+    ["home", "Home"],
+    ["therapies", "Terapias"],
+    ["about", "Sobre Mim"],
+    ["trauma", "Trauma Informed"],
+    ["services", "Meu Servir"],
+    ["contacts", "Contatos"],
+  ];
+
+  const services_menu = [
+    ["Atendimentos Terapêuticos", "therapies"],
+    "Yoga",
+    "Yoga para crianças",
+    "Educação Emocional para Crianças",
+    "Oficina Pequenos Inventores",
   ];
 
   useEffect(() => {
-    eval(items_menu[0] + "Visible") > eval(items_menu[1] + "Visible")
-      ? setCurrentMenu(items_menu[0])
-      : eval(items_menu[1] + "Visible") > eval(items_menu[2] + "Visible")
-      ? setCurrentMenu(items_menu[1])
-      : eval(items_menu[2] + "Visible") > eval(items_menu[3] + "Visible")
-      ? setCurrentMenu(items_menu[2])
-      : eval(items_menu[3] + "Visible") > eval(items_menu[4] + "Visible")
-      ? setCurrentMenu(items_menu[3])
-      : eval(items_menu[4] + "Visible") > eval(items_menu[5] + "Visible")
-      ? setCurrentMenu(items_menu[4])
-      : setCurrentMenu(items_menu[5]);
+    eval(items_menu[0][0] + "Visible") > eval(items_menu[1][0] + "Visible")
+      ? setCurrentMenu(items_menu[0][0])
+      : eval(items_menu[1][0] + "Visible") > eval(items_menu[2][0] + "Visible")
+      ? setCurrentMenu(items_menu[1][0])
+      : eval(items_menu[2][0] + "Visible") > eval(items_menu[3][0] + "Visible")
+      ? setCurrentMenu(items_menu[2][0])
+      : eval(items_menu[3][0] + "Visible") > eval(items_menu[4][0] + "Visible")
+      ? setCurrentMenu(items_menu[3][0])
+      : eval(items_menu[4][0] + "Visible") > eval(items_menu[5][0] + "Visible")
+      ? setCurrentMenu(items_menu[4][0])
+      : setCurrentMenu(items_menu[5][0]);
   });
 
   return (

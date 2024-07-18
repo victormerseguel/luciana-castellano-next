@@ -1,0 +1,50 @@
+@import url("../globals_cp.css");
+
+.headerContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 250px;
+}
+
+.headerContent {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.headerContent img {
+  width: 171px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.headerContent h1 {
+  font-family: "Argent CF", serif;
+  font-size: 15pt;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  margin-bottom: 43px;
+  padding: 0 50px;
+  line-height: 1.5;
+}
+
+.headerContent b {
+  font-weight: 600;
+}
+
+.headerContent p {
+  font-family: Arimo, sans-serif;
+  font-size: 13pt;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+  .headerContent h1 {
+    padding: 0 25px;
+  }
+}

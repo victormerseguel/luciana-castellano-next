@@ -37,12 +37,6 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
-      <Image
-        src="/assets/clean-bg.jpg"
-        alt="Background"
-        fill
-        className={styles.footer_bg}
-      />
       <div className={styles.footer_content}>
         <Title text="Siga" />
         <div className={styles.instagram_posts}>

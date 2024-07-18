@@ -1,8 +1,5 @@
 .therapies {
-  background-image: url("../../../../public/assets/therapies-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: cover;
+  position: relative;
   padding: 90px 30px 100px;
 }
 
@@ -21,22 +18,27 @@
 }
 
 .therapies_right {
+  width: 100%;
   max-width: 300px;
 }
 
+.therapies_right div {
+  position: relative;
+  padding-top: 139.6%;
+}
+
 .therapies_right img {
-  width: 100%;
   box-shadow: 4px 4px 12px 0px rgba(79, 64, 42, 0.35);
 }
 
-@media (max-width: 850px) {
+/* @media (max-width: 850px) {
   .therapies_left {
     flex-shrink: 2;
   }
   .therapies_right {
     flex-shrink: 1;
   }
-}
+} */
 
 @media (max-width: 660px) {
   .therapies_content {

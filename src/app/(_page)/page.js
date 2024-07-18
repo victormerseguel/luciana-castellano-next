@@ -22,8 +22,8 @@ export default function Page() {
         <Header />
         <main>
           <Therapies />
-          <Trauma />
           <About />
+          <Trauma />
           {/* <Testimonials /> */}
           <Services />
           <Contacts />

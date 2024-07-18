@@ -40,6 +40,7 @@ export default function Header() {
         src="/assets/header-bg.jpg"
         alt="Luciana Castellano"
         fill
+        sizes="100vw"
         style={{ objectPosition: "center" }}
         className="bg"
         quality={85}
@@ -72,7 +73,6 @@ export default function Header() {
               width={290}
               height={424}
               quality={90}
-              // sizes="(min-width: 869px) 30vw"
             />
           </div>
           <div className={styles.header_right}>
@@ -80,6 +80,7 @@ export default function Header() {
               src="/assets/bg-watercolorright.png"
               alt="Watercolor background"
               fill
+              sizes="(max-width: 562px) 100vw, 50vw"
               quality={90}
             />
             <p>

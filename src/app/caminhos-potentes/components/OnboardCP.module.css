@@ -1,0 +1,56 @@
+@import url("../globals_cp.css");
+
+.OnboardTransition1 {
+  border-radius: 0;
+  margin-top: -169px;
+  width: 100%;
+  height: 69px;
+  position: relative;
+}
+.OnboardTransition2 {
+  border-radius: 0;
+  width: 101%;
+  height: 79px;
+  position: relative;
+}
+
+.OnboardContainer {
+  width: 100%;
+  /* background-image: url("/assets/caminhospotentes/cp_background4.jpg"); */
+  /* background-size: cover; */
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.OnboardContent {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.OnboardTitle {
+  font: 300 15pt Argent CF, serif;
+  letter-spacing: 0.4px;
+  background-image: url("/assets/caminhospotentes/cp_titlebg_onboard.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 38px;
+  padding-top: 5px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.OnboardContent p {
+  max-width: 900px;
+  font: 300 12pt Arimo, sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 20pt;
+  padding-bottom: 35px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 15px;
+}

@@ -1,0 +1,52 @@
+@import url("../globals_cp.css");
+
+.faqContainer {
+  padding: 50px 15px 90px 15px;
+  position: relative;
+}
+
+.faqTitle {
+  font: 300 15pt Argent CF, serif;
+  letter-spacing: 0.4px;
+  background: url("/assets/caminhospotentes/cp_titlebg_paraquem.png") no-repeat
+    center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faqQuestions {
+  max-width: 588px;
+  margin: 0 auto;
+}
+
+.faqQuestion {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lightBege);
+  padding: 11px 15px;
+  border-radius: 10px;
+  font: 300 13pt Argent CF, serif;
+  letter-spacing: 0.4px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.faqQuestion img {
+  border-radius: 0;
+  width: 11px;
+  height: 13px;
+  transform: rotate(90deg);
+}
+
+.faqAnswer {
+  font: 100 11.5pt Arimo, sans-serif;
+  letter-spacing: 0.6px;
+  line-height: 25px;
+  padding: 0 25px 20px;
+  border-bottom: 1px solid var(--darkGreen);
+  box-sizing: border-box;
+  display: none;
+  transition: 0.3s;
+}

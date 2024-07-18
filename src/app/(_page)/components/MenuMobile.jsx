@@ -13,14 +13,16 @@ export const handleCloseMenu = (setMobile, setAnimate) => {
     setMobile(false);
     setAnimate(true);
   }, 500);
-  console.log("fechou");
 };
 
 const MenuMobile = () => {
-  const { mobile, setMobile, animateMobileMenu, setAnimateMobileMenu } =
-    useContext(Context);
-
-  const handleClickLogo = () => {};
+  const {
+    mobile,
+    setMobile,
+    animateMobileMenu,
+    setAnimateMobileMenu,
+    items_menu,
+  } = useContext(Context);
 
   return (
     <>
@@ -34,6 +36,7 @@ const MenuMobile = () => {
             src="/assets/bg-mobile.jpg"
             alt="background"
             fill
+            sizes="100vw"
             className={styles.bg_mobile}
           />
           <div className={styles.mobile_logo}>
@@ -49,11 +52,9 @@ const MenuMobile = () => {
             </a>
           </div>
           <ul className={styles.mobile_ul}>
-            <NavItem text="Terapias" index={1} />
-            <NavItem text="Trauma Informed" index={2} />
-            <NavItem text="Sobre Mim" index={3} />
-            <NavItem text="Atendimentos" index={4} />
-            <NavItem text="Contatos" index={5} />
+            {items_menu.map((item, idx) => (
+              <NavItem index={idx} key={idx} />
+            ))}
           </ul>
           <div className={styles.mobile_close}>
             <Image
