@@ -1,0 +1,62 @@
+.cta {
+    background-color: #fff8e6;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    display: flex;
+}
+
+.conteudo4 {
+    width: 1010px;
+    margin: auto;
+    text-align: center;
+}
+
+.p2 {
+    padding-bottom: 30px;
+    line-height: 24pt;
+}
+
+.btn2 {
+    color: #fff8e6;
+    background: #30c137;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+
+}
+
+.btn2:hover {
+    background: #238528;
+    transition: background 0.5s;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------
+------- RESPONSIVIDADE -------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 1010px) {
+    .cta {
+        padding-bottom: 60px;
+    }
+
+    .conteudo4 {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .btn2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px auto;
+    }
+}

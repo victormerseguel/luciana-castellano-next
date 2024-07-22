@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.conteudo {
+  margin: 0 auto;
+  width: 980px;
+  position: relative;
+}
+
+.collage1 {
+  margin: 0 auto;
+  width: 50%;
+  float: left;
+  padding-top: 0px;
+  display: flex;
+}
+
+.logo {
+  padding-top: 0;
+}
+
+.form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.form input {
+  height: 38px;
+  padding-left: 10px;
+  font-family: roboto, sans-serif;
+  font-size: 10pt;
+  border-radius: 5px;
+  border: 0px;
+  margin: 3px;
+}
+
+.btn {
+  background-color: #30c137;
+  color: #fff8e6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #238528;
+  transition: background 0.5s;
+}
+
+.titleHeader {
+  font-family: "Roboto", sans-serif;
+  color: #fff8e6;
+  font-size: 15px;
+  padding-top: 40px;
+  line-height: 24pt;
+  font-weight: 400;
+  text-align: left;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------
+------- RESPONSIVIDADE -------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1010px) {
+  /*---HEADER-------------------------------------------------------*/
+  .header {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .logo {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: -15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .centerLogo {
+    margin: auto;
+  }
+
+  .collage1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .collage1 img {
+    width: 180px;
+    height: auto;
+  }
+
+  .centerLogo img {
+    width: 250px;
+    height: auto;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .titleHeader {
+    text-align: center;
+    line-height: 18pt;
+    padding-top: 20px;
+  }
+}

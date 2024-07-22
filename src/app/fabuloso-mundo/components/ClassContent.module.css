@@ -1,0 +1,113 @@
+.conteudoAulas {
+  background-image: url("/assets/fabulosomundo/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.conteudo2 {
+  width: 1010px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.titulo1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aulas {
+  display: flex;
+  padding-top: 15px;
+}
+
+.aula1 {
+  background-image: url("/assets/fabulosomundo/papel-fundo1.png");
+  background-repeat: no-repeat;
+  width: 334px;
+  height: 320px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.aula2 {
+  background-image: url("/assets/fabulosomundo/papel-fundo1.png");
+  background-repeat: no-repeat;
+  width: 334px;
+  height: 320px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.aula3 {
+  background-image: url("/assets/fabulosomundo/papel-fundo1.png");
+  background-repeat: no-repeat;
+  width: 334px;
+  height: 320px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.pAula {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 25px;
+  line-height: 18pt;
+  color: #253328;
+}
+
+.h2ConteudoAulas {
+  font-family: merriweather, serif;
+  font-size: 16pt;
+  margin-bottom: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------
+------- RESPONSIVIDADE -------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1010px) {
+  /*---AULAS-------------------------------------------------------*/
+  .conteudo2 {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .img002 {
+    width: 110%;
+    max-width: 511px;
+  }
+
+  .aulas {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .aula1 {
+    padding-top: 0px;
+  }
+
+  .aula2 {
+    padding-top: 20px;
+  }
+
+  .aula3 {
+    padding-top: 15px;
+  }
+
+  .pAula {
+    margin-top: 15px;
+  }
+
+  .h2ConteudoAulas {
+    font-family: merriweather, serif;
+    font-size: 16pt;
+    margin-bottom: 8px;
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,89 @@
+.sobre {
+  background-image: url("/assets/fabulosomundo/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.titulo2 {
+  display: flex;
+  justify-content: center;
+}
+
+.conteudo3 {
+  width: 1010px;
+  margin: auto;
+  display: flex;
+}
+
+.collage2 {
+  width: 40%;
+  display: flex;
+  /*padding-top: 170px;*/
+  align-items: center;
+}
+
+.textoSobre {
+  background-image: url("/assets/fabulosomundo/papel-fundo3.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  width: 630px;
+  margin-top: 0px;
+}
+
+.p1 {
+  padding-top: 50px;
+  margin-left: 70px;
+  margin-right: 60px;
+  line-height: 23pt;
+  font-size: 11pt;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------
+------- RESPONSIVIDADE -------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1010px) {
+  .conteudo3 {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  .collage2 {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_itulo_sobre {
+    padding-top: 30px;
+    width: 90%;
+    max-width: 415px;
+  }
+
+  .textoSobre {
+    background-image: url("/assets/fabulosomundo/papel-fundo3.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .p1 {
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .img_collage_2 {
+    width: 90%;
+    max-width: 394px;
+  }
+}

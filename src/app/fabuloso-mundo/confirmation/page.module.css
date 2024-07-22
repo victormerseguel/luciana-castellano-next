@@ -1,0 +1,141 @@
+/*-------CONTAINER PRINCIPAL-----------------*/
+.total__bg {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("/assets/fabulosomundo/background4.jpg") !important;
+
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+/*-------CONTAINER CONTEÚDO-----------------*/
+.conteudo_central {
+  max-width: 1000px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*-------LOGO-------------------------------*/
+.logo {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*-------PLANTAS----------------------------*/
+.plantas__bg {
+  background-image: url("/assets/fabulosomundo/plantas-fundo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 222px;
+  width: 644px;
+  padding-top: 58px;
+}
+
+/*-------TEXTOS-----------------------------*/
+.h22 {
+  font-family: merriweather, serif;
+  font-size: 18pt;
+  font-weight: 300;
+  color: #fff8e6;
+  text-align: center;
+  margin-top: -12px;
+}
+
+.h33 {
+  font-family: roboto, sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 19pt;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/*-------BARRA DE PROGRESSO------------------*/
+.barraProgresso {
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*-------BOTÃO-------------------------------*/
+.btn {
+  max-width: 645px;
+  padding: 100px 0;
+  margin: 0 auto;
+}
+
+.btn__whatsapp {
+  color: #fff8e6;
+  background: #30c137;
+  background-image: url("/assets/fabulosomundo/whatsapp.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  border: 0;
+  border-radius: 9px;
+  text-align: center;
+  user-select: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 95px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+}
+/* h2 {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #253328;
+  font-weight: 300;
+} */
+
+/*----------------------------------------------------
+---------RESPONSIVIDADE-------------------------------
+-----------------------------------------------------*/
+
+@media (max-width: 520px) and (min-width: 450px) {
+  .conteudo_central {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .conteudo_central {
+    width: 100%;
+  }
+  .img__logo {
+    width: 250px;
+  }
+  .logo {
+    padding-top: 90px;
+  }
+  .plantas__bg {
+    background-size: 500px;
+    padding-top: 30px;
+  }
+  .h22 {
+    font-size: 13pt;
+    margin-top: 26px;
+  }
+  .h33 {
+    font-size: 10pt;
+    line-height: 15pt;
+  }
+  .barra-progresso {
+    width: 80%;
+  }
+  .btn {
+    padding-top: 50px;
+    margin-top: 0px;
+  }
+  .btn__whatsapp {
+    font-size: 12pt;
+  }
+}
