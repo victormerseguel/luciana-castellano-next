@@ -1,6 +1,6 @@
 import { Inter, Oswald } from "next/font/google";
 
-const interr = Inter({
+const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--inter",
@@ -23,7 +23,7 @@ export const metadata = {
 
 export default function PequenosInventoresLayout({ children }) {
   return (
-    <html lang="pt" className={`${interr.variable} ${oswald.variable}`}>
+    <html lang="pt" className={`${inter.variable} ${oswald.variable}`}>
       <body>{children}</body>
     </html>
   );
