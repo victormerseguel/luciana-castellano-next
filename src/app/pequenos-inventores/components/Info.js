@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./Info.module.css";
+import Link from "next/link";
 
 const Info = () => {
   return (
@@ -41,7 +42,9 @@ const Info = () => {
             Garante já a tua vaga!
           </strong>
         </p>
-        <button>Fazer Inscrição</button>
+        <Link href={"https://forms.gle/qMrXAjxrgXcdxiBV8"}>
+          <button>Fazer Inscrição</button>
+        </Link>
       </div>
       <Image
         src={"/assets/pequenosinventores/peq-inv_spring.png"}

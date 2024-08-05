@@ -2,6 +2,7 @@ import style from "./Header.module.css";
 import "../../globals.css";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -36,7 +37,9 @@ const Header = () => {
               </strong>
               , trabalhos manuais e sustentabilidade.
             </p>
-            <button>Inscreve-te já!</button>
+            <Link href={"https://forms.gle/qMrXAjxrgXcdxiBV8"}>
+              <button>Inscreve-te já!</button>
+            </Link>
           </div>
         </div>
       </div>
