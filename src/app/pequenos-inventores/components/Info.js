@@ -32,7 +32,7 @@ const Info = () => {
           </span>
         </p>
         <p className={`${style.small} ${style.space}`}>
-          * Materiais e lanche inclusos
+          * Materiais e lanche incluídos
         </p>
         <p className={style.small}>
           <strong>

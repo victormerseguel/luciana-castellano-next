@@ -29,14 +29,14 @@ const Header = () => {
           </div>
           <div className={style.right}>
             <p>
-              Uma oficina de desenvolvimento de{" "}
+              Uma oficina para desenvolver{" "}
               <strong>
-                criatividade, planejamento estratégico, trabalho em equipe,
+                criatividade, planeamento estratégico, trabalho em equipa,
                 autoconfiança
               </strong>
               , trabalhos manuais e sustentabilidade.
             </p>
-            <button>Fazer Inscrição</button>
+            <button>Inscreve-te já!</button>
           </div>
         </div>
       </div>

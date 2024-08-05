@@ -25,9 +25,9 @@ const Content = () => {
         </div>
         <div className={style.right}>
           <p>
-            Em Pequenos Inventores, a dupla conduz as crianças num processo
-            completo de criação que vai desde a concepção até o invento
-            finalizado, com tudo a que se tem direito.
+            Em Pequenos Inventores, a dupla guia as crianças num processo
+            completo de criação, desde a concepção até ao invento finalizado,
+            com tudo a que têm direito.
           </p>
           <p>Os miúdos aprendem:</p>
           <ul>
@@ -40,20 +40,18 @@ const Content = () => {
             <li>Preparação e pré-produção;</li>
             <li>Manuseio de ferramentas;</li>
             <li>Relações interpessoais e</li>
-            <li>Processos colaborativos;</li>
+            <li>Processos colaborativos.</li>
           </ul>
           <p>
-            Mas acima de qualquer coisa, a criança passa por uma experiência que
-            pode ser muito enriquecedora para ela, numa oportunidade de
-            sentir-se pertencente, de fazer parte do surgimento de algo que, se
-            não fosse por ela, poderia não existir nunca. Passa também pela
-            experimentação de se sentir orgulhoso ou orgulhosa de algo que faz e
-            acaba por perceber que é mais capaz do que pode imaginar.
+            Mas acima de tudo, a criança passa por uma experiência que pode ser
+            muito enriquecedora, uma oportunidade de sentir-se parte do
+            surgimento de algo que, se não fosse por ela, podia nunca existir.
+            Passa também pela experiência de sentir orgulho de algo que fez,
+            percebendo que é mais capaz do que imaginava.
           </p>
           <p>
-            O invento em si, passa a ser apenas um pretexto para transformar
-            pequenos inventores em grandes pessoas, felizes e mais seguras de si
-            mesmas.
+            O invento em si é apenas um pretexto para transformar pequenos
+            inventores em grandes pessoas, felizes e mais seguras de si mesmas.
           </p>
         </div>
       </div>
