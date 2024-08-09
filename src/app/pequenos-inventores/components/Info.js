@@ -26,14 +26,14 @@ const Info = () => {
         <p className={`${style.small} ${style.space}`}>
           Rua Frei Bartolomeu dos Mártires, 17 - Nova Oeiras
         </p>
-        <p className={style.space}>
-          <strong>Valor: </strong>72€{" "}
+        <p>
+          <strong>Valor: </strong>72€
           {/* <span className={style.small}>
             {"("}22€ pagos na inscrição + 50€ pagos até ao dia 09/08{")"}
           </span> */}
         </p>
         <p className={`${style.small} ${style.space}`}>
-          * Materiais e lanche incluídos
+          * Materiais e lanches incluídos
         </p>
         <p className={style.small}>
           <strong>
