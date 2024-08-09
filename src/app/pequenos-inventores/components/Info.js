@@ -28,9 +28,9 @@ const Info = () => {
         </p>
         <p className={style.space}>
           <strong>Valor: </strong>72€{" "}
-          <span className={style.small}>
+          {/* <span className={style.small}>
             {"("}22€ pagos na inscrição + 50€ pagos até ao dia 09/08{")"}
-          </span>
+          </span> */}
         </p>
         <p className={`${style.small} ${style.space}`}>
           * Materiais e lanche incluídos
