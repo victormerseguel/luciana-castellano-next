@@ -13,7 +13,7 @@ const Info = () => {
         className={style.spring}
       />
       <div className={style.content}>
-        <p className={style.space}>Para miúdos dos 8 aos 12 anos</p>
+        <p className={style.space}>Para miúdos dos 7 aos 12 anos</p>
         <p>
           <strong>Datas: </strong>12, 13 e 14 de agosto
         </p>
