@@ -15,18 +15,18 @@ const cards = [
   {
     src: atendimentos,
     alt: "Banner Atendimentos",
-    link: "https://wa.me/5511976363608?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+dos+atendimentos.",
+    link: "https://wa.me/351935715802?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+dos+atendimentos.",
   },
-  {
-    src: pequenosinventores,
-    alt: "Banner Pequenos Inventores",
-    link: "https://wa.link/g8yw9y",
-  },
-  {
-    src: caminhospotentes,
-    alt: "Banner Curso Caminhos Potentes",
-    link: "https://luhcastellano.com/caminhos-potentes",
-  },
+  // {
+  //   src: pequenosinventores,
+  //   alt: "Banner Pequenos Inventores",
+  //   link: "https://wa.link/g8yw9y",
+  // },
+  // {
+  //   src: caminhospotentes,
+  //   alt: "Banner Curso Caminhos Potentes",
+  //   link: "https://luciana-castellano.vercel.app/caminhos-potentes",
+  // },
   // {
   //   src: fabuloso,
   //   alt: "Banner do curso O Fabuloso Mundo das Crianças que se Amam",
