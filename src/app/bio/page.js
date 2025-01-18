@@ -30,7 +30,7 @@ const cards = [
   // {
   //   src: fabuloso,
   //   alt: "Banner do curso O Fabuloso Mundo das Crianças que se Amam",
-  //   link: "https://wa.me/351935715802?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+do+curso+O+Fabuloso+Mundo+das+Crian%c3%a7as+que+se+Amam.",
+  //   link: "https://wa.me/351935715800?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+do+curso+O+Fabuloso+Mundo+das+Crian%c3%a7as+que+se+Amam.",
   // },
   // {
   //   src: rematerna,
