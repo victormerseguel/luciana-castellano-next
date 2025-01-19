@@ -15,7 +15,7 @@ const cards = [
   {
     src: atendimentos,
     alt: "Banner Atendimentos",
-    link: "https://wa.me/351935715802?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+dos+atendimentos.",
+    link: "https://wa.me/351935715800?text=Ol%c3%a1%2c+gostaria+de+mais+informa%c3%a7%c3%b5es+%c3%a0+respeito+dos+atendimentos.",
   },
   // {
   //   src: pequenosinventores,
